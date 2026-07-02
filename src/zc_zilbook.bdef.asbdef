@@ -1,0 +1,19 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_ZILBOOK //alias <alias_name>
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _Issue ;
+}
+
+define behavior for ZC_ZISSUSE
+{
+  use update;
+  use delete;
+
+  use association _Book;
+}
